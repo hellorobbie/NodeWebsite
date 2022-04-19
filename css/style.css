@@ -167,7 +167,7 @@ position: relative; }
 
 .btn {
   background: #efefef;
-  color: #4c4c4e;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 2px;
   display: inline-block;
@@ -202,7 +202,7 @@ position: relative; }
       padding: 8rem 0; } }
 
 .text-primary {
-  color: #fff;
+  color: #000;
   font-size: 2.2rem;
   text-align: center;
   width: 100%;
@@ -215,7 +215,7 @@ position: relative; }
   display: none; }
 
 .home-hero {
-  color: #fff;
+  color: #000;
   background: linear-gradient(to right, rgba(255, 195, 21, 0.8), rgba(255, 195, 21, 0.8)), url(../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
@@ -421,7 +421,7 @@ position: relative; }
     display: block;
     text-align: left; }
   .contact__form-input {
-    color: #4c4c4e;
+    color: #000;
     padding: 2rem;
     width: 100%;
     border: 1px solid #ebebeb;
@@ -617,7 +617,7 @@ position: relative; }
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: #4c4c4e;
+    color: #000;
     transition: color .3s; }
     .header__logo-container:hover {
       color: #ffc315; }
@@ -653,7 +653,7 @@ position: relative; }
     padding: 2.2rem 3rem;
     display: inline-block;
     font-size: 1.6rem;
-    color: #4c4c4e;
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
@@ -698,7 +698,7 @@ position: relative; }
     text-decoration: none;
     padding: 2.5rem 3rem;
     font-size: 1.6rem;
-    color: #4c4c4e;
+    color: #000;
     text-align: right;
     border-bottom: 1px solid #eee;
     font-weight: 700;
@@ -807,3 +807,61 @@ position: relative; }
   to {
     opacity: 0;
     top: 27px; } }
+
+/* span.wave:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}     */
+
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: 2.5s;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+.wave:hover {
+  animation-name: wavehover-animation;  
+  animation-duration: 2.5s;        
+  animation-iteration-count: 5s;  
+  transform-origin: 70% 70%;       
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+@keyframes wavehover-animation {
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(14.0deg) }  
+ 20% { transform: rotate(-8.0deg) }
+ 30% { transform: rotate(14.0deg) }
+ 40% { transform: rotate(-4.0deg) }
+ 50% { transform: rotate(10.0deg) }
+ 60% { transform: rotate( 0.0deg) }
+100% { transform: rotate( 0.0deg) }
+}
