@@ -93,10 +93,10 @@ textarea {
   margin-bottom: 3.5rem;
   position: relative; }
   .heading-sec__main--lt {
-    color: #fff; }
+    color: #000; }
     .heading-sec__main--lt::after {
       content: '';
-      background: #fff !important; }
+      background: #000 !important; }
   .heading-sec__main::after {
     content: '';
     position: absolute;
@@ -153,7 +153,7 @@ position: relative; }
     .heading-sec__sub {
       font-size: 1.8rem; } }
   .heading-sec__sub--lt {
-    color: #eee; }
+    color: #000; }
 
 .heading-sm {
   font-size: 2.2rem;
@@ -300,7 +300,7 @@ position: relative; }
 @media only screen and (max-width: 37.5em) {
   .thumbnail3 {
   width: 25%;
-  margin-left: -34vw;
+  margin-left: -44vw;
   margin-top: 13vh;
   }
 }
