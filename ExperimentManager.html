@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Robbie Nguyen - Projects - Blog w/ MongoDB</title>
-    <meta name="description" content="Case study page of Project" />
+    <title>Robbie Nguyen - Projects - Experiment Manager</title>
+    <meta name="description" content="Case study page of Experiment Manager" />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -97,14 +97,14 @@
         </g>
       </svg>
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Blog w/ MongoDB</h1>
+        <h1 class="heading-primary">Experiment Manager</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            A blogging application built with front-end technologies, Node.js, and data storage in MongoDB.
+            An internal control-plane tool for creating and managing A/B test experiments, with status workflows, targeting rules, and a full audit log.
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="https://fast-dawn-78832-bffa56ca5dd5.herokuapp.com/" class="btn btn--bg" target="_blank">Live Link</a>
+          <a href="https://experiment-manager-prod-001146717f84.herokuapp.com/experiments" class="btn btn--bg" target="_blank">Live Link</a>
         </div>
       </div>
     </section>
@@ -113,23 +113,20 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/png/project-mockup-example.png"
-              alt="Project Image"
+              src="./assets/png/em_page_mockup.png"
+              alt="Experiment Manager Preview"
               class="project-details__showcase-img"
-              style="z-index: -1;"
             />
-            <iframe style="z-index: 1;" id="AppIframe" src="https://fast-dawn-78832-bffa56ca5dd5.herokuapp.com/"></iframe>
-            <div class="iframe-loader-overlay" id="iframeLoader"><div class="loader"></div></div>
           
           <div class="project-details__showcase-links">
             <a
-              href="https://fast-dawn-78832-bffa56ca5dd5.herokuapp.com/"
+              href="https://experiment-manager-prod-001146717f84.herokuapp.com/experiments"
               class="btn btn--med btn--theme project-details__links-btn"
               target="_blank"
               >Live Link</a
             >
             <a
-              href="https://github.com/hellorobbie/blog"
+              href="https://github.com/hellorobbie/experiment-manager"
               class="btn btn--med btn--theme-inv project-details__links-btn"
               target="_blank"
               >Code Link</a
@@ -140,25 +137,24 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                A fully custom built blogging web-application. This application allows users to submit blog posts that will be stored in MongoDB. Using a RESTful API, data entered into the blog section is sent to MongoDB via Mongoose.
+                A full-stack experiment management platform built with Next.js and TypeScript, designed as an internal control-plane for product and marketing teams to define and govern A/B test configurations. The application walks users through a five-step experiment creation wizard covering metadata, variant setup, targeting rules, and KPI selection. Authentication is handled via NextAuth.js, restricting access to authorised users only.
               </p>
               <p class="project-details__desc-para">
-                Once stored in MongoDB, an Express.js template is used to show all blog posts within the database.
+                Experiments follow a structured status workflow — Draft, Live, Paused, and Ended — with enforced validation at each transition (e.g. traffic allocation must sum to 100%, a minimum of two variants is required before going live). A comprehensive audit log tracks all changes with expandable diffs. Backed by PostgreSQL via Prisma ORM and deployed to Heroku.
               </p>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
+                <div class="skills__skill">Next.js</div>
+                <div class="skills__skill">TypeScript</div>
+                <div class="skills__skill">PostgreSQL</div>
+                <div class="skills__skill">Prisma ORM</div>
+                <div class="skills__skill">NextAuth.js</div>
+                <div class="skills__skill">Tailwind CSS</div>
+                <div class="skills__skill">Zod</div>
                 <div class="skills__skill">GIT/Version Control</div>
-                <div class="skills__skill">API</div>
-                <div class="skills__skill">MongoDB</div>
-                <div class="skills__skill">Mongoose</div>
-                <div class="skills__skill">Express</div>
-                <div class="skills__skill">Node.js</div>
-
+                <div class="skills__skill">Heroku</div>
               </div>
             </div>
           </div>
@@ -192,15 +188,15 @@
           <div class="main-footer__row main-footer__row-2">
             <h4 class="heading heading-sm text-lt">Robbie Nguyen</h4>
             <p class="main-footer__short-desc">
-            I help businesses bring their digital ideas to life.
-            Using Adobe CC, VS Code, GitHub, and coffee;
-            I turn requirements into elegant, functional websites - on time and on budget.
+              I help businesses bring their digital ideas to life.
+              Using Adobe CC, VS Code, GitHub, and coffee;
+              I turn requirements into elegant, functional websites - on time and on budget.
             </p>
           </div>
         </div>
 
         <div class="main-footer__lower">
-          Copyright  <script>document.write(new Date().getFullYear())</script> Made by
+          Copyright <script>document.write(new Date().getFullYear())</script> Made by
           <a rel="noreferrer" href="https://robbienguyen.ca"
             >Robbie Nguyen</a
           >
@@ -208,20 +204,5 @@
       </div>
     </footer>
     <script src="./index.js"></script>
-    <script>
-      var iframe = document.getElementById('AppIframe');
-      var loader = document.getElementById('iframeLoader');
-      if (iframe && loader) {
-        iframe.addEventListener('load', function () {
-          loader.style.display = 'none';
-        });
-        // Handle fast/local iframes that load before this script runs
-        try {
-          if (iframe.contentDocument && iframe.contentDocument.readyState === 'complete') {
-            loader.style.display = 'none';
-          }
-        } catch (e) {}
-      }
-    </script>
   </body>
 </html>
