@@ -208,13 +208,17 @@
       var iframe = document.getElementById('AppIframe');
       var loader = document.getElementById('iframeLoader');
       if (iframe && loader) {
-        iframe.addEventListener('load', function () {
-          loader.style.display = 'none';
-        });
-        // Handle fast/local iframes that load before this script runs
+        var minDisplay = 1500;
+        var startTime = Date.now();
+        function hideLoader() {
+          var elapsed = Date.now() - startTime;
+          var remaining = Math.max(0, minDisplay - elapsed);
+          setTimeout(function () { loader.style.display = 'none'; }, remaining);
+        }
+        iframe.addEventListener('load', hideLoader);
         try {
           if (iframe.contentDocument && iframe.contentDocument.readyState === 'complete') {
-            loader.style.display = 'none';
+            hideLoader();
           }
         } catch (e) {}
       }
