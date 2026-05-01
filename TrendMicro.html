@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Robbie Nguyen - Projects - Trend Micro Portfolio</title>
+    <meta name="description" content="Case study: Trend Micro targeted consumer security portfolio — Astro, React, Tailwind CSS, DaisyUI." />
+
+    <link rel="icon" type="image/png" href="./assets/png/favicon.png" />
+    <link rel="apple-touch-icon" href="./assets/png/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Robbie Nguyen Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Robbie Nguyen</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./#" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./#"> Home </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./#about"> About </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./#projects"> Projects </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <svg class="section-bg-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g class="section-bg-svg__group" fill-opacity="0.12">
+          <g transform="scale(0.35)"><polygon class="bg-polygon" fill="#444" points="90 150 0 300 180 300"/><polygon class="bg-polygon" points="90 150 180 0 0 0"/><polygon class="bg-polygon" fill="#AAA" points="270 150 360 0 180 0"/><polygon class="bg-polygon" fill="#DDD" points="450 150 360 300 540 300"/><polygon class="bg-polygon" fill="#999" points="450 150 540 0 360 0"/><polygon class="bg-polygon" points="630 150 540 300 720 300"/><polygon class="bg-polygon" fill="#DDD" points="630 150 720 0 540 0"/><polygon class="bg-polygon" fill="#444" points="810 150 720 300 900 300"/><polygon class="bg-polygon" fill="#FFF" points="810 150 900 0 720 0"/><polygon class="bg-polygon" fill="#DDD" points="990 150 900 300 1080 300"/><polygon class="bg-polygon" fill="#444" points="990 150 1080 0 900 0"/></g>
+        </g>
+      </svg>
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Trend Micro — Consumer Security Portfolio</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            A targeted portfolio built for the Junior Applied AI Web Developer role at Trend Micro, Ottawa. Features a full consumer security landing page and an interactive UI component library — both styled to match Trend Micro's brand.
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="https://gullible-group.vercel.app" class="btn btn--bg" target="_blank">View Landing Page</a>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/png/project-mockup-example.png"
+              alt="Trend Micro Portfolio Preview"
+              class="project-details__showcase-img"
+              style="z-index: -1;"
+            />
+            <iframe style="z-index: 1;" id="AppIframe" src="https://gullible-group.vercel.app"></iframe>
+            <div class="iframe-loader-overlay" id="iframeLoader"><div class="loader"></div></div>
+
+          <div class="project-details__showcase-links">
+            <a
+              href="https://gullible-group.vercel.app"
+              class="btn btn--med btn--theme project-details__links-btn"
+              target="_blank"
+              >Landing Page</a
+            >
+            <a
+              href="https://gullible-group.vercel.app/components"
+              class="btn btn--med btn--theme-inv project-details__links-btn"
+              target="_blank"
+              >Component Library</a
+            >
+          </div>
+        </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                This portfolio was built specifically to demonstrate fit for Trend Micro's Ottawa team. The project consists of two deliverables: a consumer security landing page ("Sentinel") that mirrors the look and feel of Trend Micro's own marketing site, and an interactive component library showcasing DaisyUI components styled with a custom Trend Micro dark theme.
+              </p>
+              <p class="project-details__desc-para">
+                The landing page includes a live threat intelligence dashboard, animated scrollytelling sections, a fully interactive pricing tier picker (with Device Protection, Anti-Scam, and Identity Protection tabs), and a mock testimonials section — all matching Trend Micro's brand colours, typography, and product copy. The component library documents badges, alerts, forms, tables, and modals in a live browser environment. Both are deployed to Vercel.
+              </p>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Astro</div>
+                <div class="skills__skill">React</div>
+                <div class="skills__skill">TypeScript</div>
+                <div class="skills__skill">Tailwind CSS</div>
+                <div class="skills__skill">DaisyUI v5</div>
+                <div class="skills__skill">CSS Custom Properties</div>
+                <div class="skills__skill">Vercel</div>
+                <div class="skills__skill">GIT/Version Control</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/robbienguyen">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/hellorobbie">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Robbie Nguyen</h4>
+            <p class="main-footer__short-desc">
+              I help businesses bring their digital ideas to life.
+              Using Adobe CC, VS Code, GitHub, and coffee;
+              I turn requirements into elegant, functional websites - on time and on budget.
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          Copyright <script>document.write(new Date().getFullYear())</script> Made by
+          <a rel="noreferrer" href="https://robbienguyen.ca"
+            >Robbie Nguyen</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script>
+      var iframe = document.getElementById('AppIframe');
+      var loader = document.getElementById('iframeLoader');
+      if (iframe && loader) {
+        var minDisplay = 1500;
+        var startTime = Date.now();
+        function hideLoader() {
+          var elapsed = Date.now() - startTime;
+          var remaining = Math.max(0, minDisplay - elapsed);
+          setTimeout(function () { loader.style.display = 'none'; }, remaining);
+        }
+        iframe.addEventListener('load', hideLoader);
+        try {
+          if (iframe.contentDocument && iframe.contentDocument.readyState === 'complete') {
+            hideLoader();
+          }
+        } catch (e) {}
+      }
+    </script>
+  </body>
+</html>
